@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferrari Fan Page</title>
+    <!-- Link CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body class="ferrari">
+    <header>
+        <!-- Nav Bootstrap -->
+
+        <nav class="navbar navbar-expand-lg nav-ferrari">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"> <img src="./img/cavallino-logo.jpg" class="cavallino-nav"
+                        alt="Logo Cavallino Rampante"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/racing.html">Racing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/sportcars.html">Sport Cars</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/classics.html">Classics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/timeline.html">Timeline</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <!-- Video inicial de la web -->
+        <div class="video-enzo">
+            <video autoplay muted loop>
+                <source src="./multimedia/rememberenzo.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+
+        <h1 class="h1-index">Enzo Ferrari y su mítico legado</h1>
+
+        <section class="frases">
+            <!-- Cards Bootstrap con frases -->
+            <div class="card text-bg-dark mb-3" style="max-width: 15rem;">
+                <div class="card-body">
+                    <p class="card-text">"Nunca agaches la cabeza, mira siempre bien alto ganes o pierdas."</p>
+                    <h5 cite title="Source Title">Enzo Ferrari</h5>
+                </div>
+            </div>
+            <div class="card text-bg-dark mb-3" style="max-width: 15rem;">
+                <div class="card-body">
+                    <p class="card-text">"La mejor Ferrari, es la que aún no se ha contruido."</p>
+                    <h5 cite title="Source Title">Enzo Ferrari</h5>
+                </div>
+            </div>
+
+            <div class="card text-bg-dark mb-3" style="max-width: 15rem;">
+                <div class="card-body">
+                    <p class="card-text">"Los Ferrari son un sueño, la gente sueña con tener un coche tan especial,
+                        y con la excepción de unos pocos afortunados, para muchos seguirá siendo un sueño."</p>
+                    <h5 cite title="Source Title">Enzo Ferrari</h5>
+                </div>
+            </div>
+            <div class="card text-bg-dark mb-3" style="max-width: 15rem;">
+                <div class="card-body">
+                    <p class="card-text">"No vendo coches, vendo motores. El coche lo regalo, el motor tiene que ir
+                        montado en
+                        algún sitio."</p>
+                    <h5 cite title="Source Title">Enzo Ferrari</h5>
+                </div>
+            </div>
+        </section>
+        <div>
+            <h2>Los modelos más iconicos del siglo XXI</h2>
+        </div>
+        <section>
+            <!--Cards Bootstrap con imágenes-->
+            <div class="card ferrari-cards" style="width: 18rem;">
+                <img src="./img/ferrarienzo.avif" class="card-img-top" alt="Ferrari Enzo">
+                <div class="card-body">
+                    <h5 class="card-title">Ferrari Enzo</h5>
+                </div>
+            </div>
+            <div class="card ferrari-cards" style="width: 18rem;">
+                <img src="./img/ferraridaytonasp3.jpg" class="card-img-top" alt="Ferrari Daytona SP3">
+                <div class="card-body">
+                    <h5 class="card-title">Ferrari Daytona SP3</h5>
+                </div>
+            </div>
+            <div class="card ferrari-cards" style="width: 18rem;">
+                <img src="./img/ferrarilaferrari.avif" class="card-img-top" alt="Ferrari LaFerrari">
+                <div class="card-body">
+                    <h5 class="card-title">Ferrari LaFerrari</h5>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Ferrari S.p.A. - A company under Italian law, having its registered office at Via Emilia Est No. 1163,
+                Modena, Italy, Companies’
+                Register of Modena, VAT and Tax number 00159560366 and share capital of Euro 20,260,000
+                Copyright 2023</p>
+            <p> - All rights reserved -</p>
+        </footer>
+    </main>
+
+    <!-- Link JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

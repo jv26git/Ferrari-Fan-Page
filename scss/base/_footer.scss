@@ -1,0 +1,17 @@
+footer {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    color: $light;
+    margin-top: 5%;
+    font-size: 12px;
+    padding: 5%;
+    @extend %hover-fade;
+
+
+    p {
+        @include flex-center;
+
+    }
+
+}

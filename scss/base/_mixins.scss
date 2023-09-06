@@ -1,0 +1,45 @@
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @mixin card-ferrari {
+    color: $rojo-ferrari;
+  
+    .card-title {
+      text-align: center;
+    }
+  }
+
+  @mixin card-styling {
+    background-color: $cards;
+  
+    .card-title {
+      text-align: center;
+    }
+  }
+
+  @mixin card-sizing {
+    width: 18rem;
+    align-items: center;
+  }
+
+  @mixin cars {
+    @include card-horizontal-row;
+    @include card-styling;
+    width: 100%;
+  }
+
+  @mixin card-horizontal-row {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: $gap;
+  }
+
+
+  @mixin ferrari {
+   margin: 0;
+   padding: 0;
+  }

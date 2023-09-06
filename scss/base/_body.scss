@@ -1,0 +1,25 @@
+
+$rojo-ferrari: #cc0000;
+$dark: #000000;
+$light: #ffffffe7;
+$cards: #1b1b1bd8;
+$gap :20px;
+
+
+.ferrari {
+    @include ferrari;
+    min-height: 100vh;
+    background-color: $dark;
+    font-style: italic;
+   
+}
+
+// Animación para el footer
+%hover-fade {
+    @include flex-center;
+    transition: opacity 0.3s ease-in-out;
+  
+    &:hover {
+      opacity: 0;
+    }
+  }

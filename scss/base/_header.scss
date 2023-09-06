@@ -1,0 +1,17 @@
+.nav-ferrari, .nav-item, .navbar-brand, .nav-link {
+    background-color: $rojo-ferrari; // Rojo Ferrari
+    @include ferrari;
+    font-style: italic;
+    color: $light;
+  }
+  
+
+  .navbar-brand {
+    margin-right: auto;
+  }
+
+  .cavallino-nav {
+    margin: 0 15px;
+    width: 50px;
+    height: 75px;
+  }
