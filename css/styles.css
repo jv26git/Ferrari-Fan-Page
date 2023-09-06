@@ -204,11 +204,13 @@ section .ferrari-timeline {
   flex-direction: row;
   flex-wrap: wrap;
   color: rgba(255, 255, 255, 0.9058823529);
-  margin: 2% 2%;
 }
 section .ferrari-timeline img,
 section .ferrari-timeline .card-body {
   background-color: rgba(27, 27, 27, 0.8470588235);
+}
+section .linea-de-tiempo {
+  display: flex;
 }
 section h2 {
   display: flex;
