@@ -182,17 +182,19 @@ section {
 
 section {
     @include flex-center;
-    flex-direction: column;
-
-
+    width: 90%;
 
     .ferrari-timeline {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-
         color: $light;
-        
+
+        width: 10rem;
+        height: 20rem;
+        margin: 5% 0;
+
+
 
 
         img,
@@ -202,8 +204,11 @@ section {
         }
 
     }
+
     .linea-de-tiempo {
-        display: flex;
+       @include flex-center;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
 
