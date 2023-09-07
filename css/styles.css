@@ -325,10 +325,10 @@ footer:hover {
     width: 100%;
     height: 100%;
     max-width: 100%;
-    margin-top: -50%;
+    margin-top: -30%;
   }
   .h1-index {
-    margin-top: -40%;
+    margin-top: -15%;
     margin-bottom: 10%;
   }
   .frases {
@@ -407,8 +407,8 @@ footer:hover {
   }
   section {
     display: flex;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
   }
   .premios {
     display: flex;
@@ -416,7 +416,7 @@ footer:hover {
     align-items: center;
     flex-wrap: wrap;
     gap: 15px;
-    width: 100vh;
+    width: 100vw;
     height: 80vh;
   }
   .racing-texto2 {
