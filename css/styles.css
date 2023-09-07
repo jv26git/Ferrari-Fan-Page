@@ -122,8 +122,8 @@ section article {
 }
 .racing iframe {
   display: grid;
-  width: 40vh;
-  height: 20vh;
+  width: 100vw;
+  height: 25vh;
 }
 
 .premios .card-body {
@@ -287,8 +287,8 @@ footer:hover {
     height: 100%;
   }
   .racing iframe {
-    width: 65vh;
-    height: 35vh;
+    width: 75vw;
+    height: 30vh;
   }
   .premios {
     display: flex;
@@ -402,8 +402,8 @@ footer:hover {
     height: 100%;
   }
   .racing iframe {
-    width: 100vh;
-    height: 55vh;
+    width: 75vw;
+    height: 80vh;
   }
   section {
     display: flex;
