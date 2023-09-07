@@ -1,17 +1,10 @@
 footer {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    color: $light;
-    margin-top: 5%;
-    font-size: 12px;
-    padding: 5%;
-    @extend %hover-fade;
-
-
-    p {
-        @include flex-center;
-
-    }
+  flex-wrap: wrap;
+  color: $light;
+  margin-top: 2rem;
+  margin: 0 3rem;
+  font-size: 12px;
+  padding: 5%;
+  @include footer-mation
 
 }

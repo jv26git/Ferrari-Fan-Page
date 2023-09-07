@@ -4,153 +4,201 @@ $desktop-min-width: 1024px;
 // Media query para Tablet
 
 @media screen and (min-width: $tablet-min-width) {
+  section {
+    @include flex-center;
+    gap: 30px;
 
+    .ferrari-cards {
+      display: flex;
+      justify-items: center;
+      margin-top: 30px;
+      background-color: $rojo-ferrari;
 
-    section {
-        @include flex-center;
-        gap: 30px;
+      .card {
+        width: 20rem;
+        align-items: center;
+      }
 
-        .ferrari-cards {
-            display: flex;
-            justify-items: center;
-            margin-top: 30px;
-            background-color: $rojo-ferrari;
-
-            .card {
-                width: 20rem;
-                align-items: center;
-
-            }
-
-            .card-title {
-                text-align: center;
-            }
-        }
+      .card-title {
+        text-align: center;
+      }
     }
+  }
 
+  .racing {
+    @include flex-center;
 
-    .racing {
-        @include flex-center;
-          
-        iframe {
-            width: 80%;
-            height: 80vh;
-        }
+    iframe {
+      width: 80%;
+      height: 80vh;
     }
+  }
 
-    .premios {
-        @include flex-center;
-        gap: 10px;
+  .premios {
+    @include flex-center;
+    gap: 10px;
+  }
 
-    }
-
-
-    footer {
-       display: grid;
-        color: $light;
-        margin-top: 5%;
-        font-size: 12px;
-        padding: 5%;
-
-        p {
-            @include flex-center;
-        }
-    }
-
+  // Footer
+  footer {
+    @include footer-mation;
+    flex-wrap: wrap;
+    color: $light;
+    margin-top: 2rem;
+    margin: 0 6.5rem;
+    font-size: 12px;
+    padding: 5%;
+  }
 }
-
-
 
 //  Media query para Desktop
 
 @media screen and (min-width: $desktop-min-width) {
-   
-    .video-enzo {
-        @include flex-center;
-        height: 150vh;
-        overflow: hidden;
+  // Index
+  .video-enzo {
+    @include flex-center;
+    height: 150vh;
+    overflow: hidden;
+
+    video {
+      display: grid;
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      margin-top: -30%;
+    }
+  }
+
+  section {
+    @include flex-center;
+    gap: 30px;
+
+    .ferrari-cards {
+      @include flex-center;
+      margin-top: 30px;
+      background-color: $rojo-ferrari;
+
+      .card-title {
+        text-align: center;
+      }
+    }
+  }
+
+  // Racing
+  .racing {
+    @include flex-center;
+
+    iframe {
+      width: 85%;
+      height: 100vh;
+    }
+  }
+
+  .premios {
+    @include flex-center;
+    gap: 15px;
+  }
+
+  .racing-texto2 {
+    display: flex;
+    text-align: center;
+    color: $light;
+    margin: 5rem 1rem;
+  }
+
+  // Footer
+  footer {
+    @include footer-mation;
+    flex-wrap: wrap;
+    color: $light;
+    margin-top: 2rem;
+    margin: 0 15rem;
+    font-size: 12px;
+    padding: 5%;
+  }
+
+  // SportCards
+
+  .ferrari-sportcards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+
+    .card {
+      flex: 0 0 calc(50% - 10px);
+      max-width: calc(50% - 10px);
+    }
+  }
+
+  // Classics
+
+  section {
+    display: flex;
+
+
+    .ferrari-classics {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 10px; 
+        width: 600px; 
       
-        video {
-          display: grid; 
-          width: 100%;
-          height: 100%; 
-          max-width: 100%;
-          margin-top: -30%
+        .car {
+          width: 500px;
+          height: 500px; 
+          background-color: $rojo-ferrari;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 20px;
+          font-weight: bold;
+        }
+      
+        .gto {
+          grid-column: 2 / 3; 
+          grid-row: 2 / 4; 
+          background-color: $rojo-ferrari; 
         }
       }
+      
+  }
 
-      .racing {
-        @include flex-center;
-          
-        iframe {
-            width: 85%;
-            height: 100vh;
-        }
+  // Timeline
+
+  section {
+    @include flex-center;
+    width: 100%;
+
+    .ferrari-timeline {
+      display: grid;
+      grid-template-columns: 1fr;
+      color: $dark;
+      text-align: center;
+      width: 300px;
+      height: 400px;
+
+      img,
+      .card-body {
+        background-color: $rojo-ferrari;
+      }
     }
 
-
-    section {
-        @include flex-center;
-        gap: 30px;
-
-        .ferrari-cards {
-            @include flex-center;
-            margin-top: 30px;
-            background-color: $rojo-ferrari;
-
-
-            .card-title {
-                text-align: center;
-            }
-        }
+    .linea-de-tiempo {
+      @include flex-center;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: $gap;
     }
 
-    .carousel-racing {
-        margin: 10% auto;
-        height: auto;
-        width: 70%;
+    h2 {
+      @include flex-center;
+      font-size: 40px;
 
-    }
-
-    .premios {
-        @include flex-center;
-        gap: 15px;
-
-    }
-
-    .racing-texto2 {
+      .fecha {
         color: $light;
-        @include flex-center;
-        margin: 5% 10%;
-
+      }
     }
-
-
-    footer {
-        display: grid;
-        color: $light;
-        margin-top: 5%;
-        font-size: 12px;
-        padding: 5%;
-
-        p {
-            @include flex-center;
-        }
-    }
-
-    .ferrari-sportcards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-wrap: nowrap;
-
-
-        .card {
-            flex: 0 0 calc(50% - 10px);
-            max-width: calc(50% - 10px);
-        }
-
-    }
-
+  }
 }
