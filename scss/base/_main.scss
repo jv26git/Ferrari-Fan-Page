@@ -24,22 +24,13 @@ h2 {
     width: 100%;
     height: 100%;
     max-width: 100%;
-    margin-top: -80%;
+    margin-top: -150%;
   }
 }
 
 .h1-index {
+  margin-top: -120%;
   margin-bottom: 10%;
-}
-
-.racing {
-  @include flex-center;
-
-  iframe {
-    display: grid;
-    width: 90%;
-    height: 50vh;
-  }
 }
 
 .frases {
@@ -53,7 +44,7 @@ h2 {
   .card {
     flex-basis: calc(50% - 10px);
     width: 500px;
-    height: 220px;
+    height: 320px;
   }
 }
 
@@ -94,6 +85,21 @@ section {
     margin: 1rem 5rem;
   }
 }
+
+// Racing
+.racing {
+  @include flex-center;
+  width: 100%;
+  height: 80%;
+
+  iframe {
+    display: grid;
+    width: 40vh;
+    height: 20vh;
+  }
+}
+
+
 .premios {
   .card-body {
     text-align: center;
@@ -122,7 +128,7 @@ section {
     color: $light;
     margin: 2% 0;
     width: 500px;
-    height: 400px;
+    height: 300px;
   }
 }
 
@@ -136,16 +142,11 @@ section {
     display: grid;
     @include cars;
     color: $light;
-    margin: 2% 0;
-    width: 500px;
-    height: 400px;
-
-    img,
-    .card-body,
-    .card,
-    .card-title {
-      background-color: $rojo-ferrari;
-    }
+    margin: 5% 0;
+    width: 400px;
+    height: 300px;
+    background-color: $rojo-ferrari;
+    
   }
 }
 
@@ -160,11 +161,8 @@ section {
     flex-wrap: wrap;
     color: $dark;
     text-align: center;
+    background-color: $rojo-ferrari;
 
-    img,
-    .card-body {
-      background-color: $rojo-ferrari;
-    }
   }
 
   .linea-de-tiempo {
