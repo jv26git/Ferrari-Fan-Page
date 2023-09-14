@@ -6,6 +6,7 @@
   @include ferrari;
   font-style: italic;
   color: $light;
+  font-size: 1.6rem;
 }
 
 .navbar-brand {
@@ -13,7 +14,8 @@
 }
 
 .cavallino-nav {
-  margin: 0 15px;
-  width: 50px;
-  height: 75px;
+  margin: 0 1.5rem;
+  width: 5rem;
+  height: 7.5rem;
+  
 }

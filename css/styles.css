@@ -1,3 +1,7 @@
+html {
+  font-size: 62.5%;
+}
+
 .ferrari {
   margin: 0;
   padding: 0;
@@ -14,6 +18,7 @@
   padding: 0;
   font-style: italic;
   color: rgba(255, 255, 255, 0.9058823529);
+  font-size: 1.6rem;
 }
 
 .navbar-brand {
@@ -21,14 +26,14 @@
 }
 
 .cavallino-nav {
-  margin: 0 15px;
-  width: 50px;
-  height: 75px;
+  margin: 0 1.5rem;
+  width: 5rem;
+  height: 7.5rem;
 }
 
 h4 {
   color: rgba(255, 255, 255, 0.9058823529);
-  margin-left: 130px;
+  margin-left: 13rem;
   position: relative;
 }
 
@@ -38,8 +43,8 @@ h2 {
   justify-content: center;
   align-items: center;
   color: rgba(255, 255, 255, 0.9058823529);
-  margin-top: 25px;
-  font-size: 18px;
+  margin-top: 2.5rem;
+  font-size: 1.6rem;
 }
 
 .index .video-enzo {
@@ -53,45 +58,71 @@ h2 {
   display: grid;
   width: 100vw;
   height: 100vh;
-  max-width: 100%;
-  margin-top: -175%;
+  margin-top: -80%;
 }
 .index .h1-index {
-  margin-top: -120%;
+  margin-top: -50%;
   margin-bottom: 10%;
 }
-.index .frases {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  margin: 30px 10px 0 0;
-  text-align: center;
+.index .h2-index {
+  margin-top: 120%;
 }
-.index .frases .card {
+.index .frases {
+  display: grid;
+  grid-template-columns: repeat(1 1fr);
+  justify-content: center;
+  gap: 2rem;
+  margin: 3rem 0;
+  text-align: center;
+  font-size: 1.2rem;
+  width: 50rem;
+  height: 40rem;
+}
+.index .frase-corta {
+  font-size: 1.8rem;
+}
+.index .frase-media {
+  font-size: 1.5rem;
+}
+.index .card {
   flex-basis: calc(50% - 10px);
-  width: 500px;
-  height: 320px;
+  width: 50rem;
+  height: 20rem;
 }
 .index section {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  flex-wrap: wrap;
+  gap: 3rem;
 }
-.index section .ferrari-cards {
-  display: flex;
-  justify-items: center;
-  margin-top: 30px;
-  background-color: #cc0000;
-  height: 280px;
-  width: 500px;
-}
-.index section .ferrari-cards .card {
+.index .ferrari-cards {
+  display: grid;
+  grid-template-columns: repeat(1 1fr);
+  justify-content: center;
   align-items: center;
+  background-color: #cc0000;
+  margin-top: 10%;
+  height: 20rem;
 }
-.index section .ferrari-cards .card-title {
+.index .ferrari-cards .card {
+  width: 10rem;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #cc0000;
+  margin-top: 5%;
+}
+.index img {
+  width: 100%;
+  height: 16rem;
+  object-fit: cover;
+}
+.index .card-title {
   text-align: center;
+  color: rgba(255, 255, 255, 0.9058823529);
+  font-size: 1.2rem;
 }
 
 .racing-f1 section {
@@ -109,25 +140,26 @@ h2 {
   width: 80vw;
   margin: 5% 0;
 }
-.racing-f1 section .racing {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.racing-f1 section .racing iframe {
-  width: 75vw;
-  height: 80vh;
+.racing-f1 section .racing-texto2 {
+  display: none;
 }
 .racing-f1 section .premios .card-body {
+  display: flex;
   text-align: center;
-  height: 200px;
-  width: 250px;
+  height: 20rem;
+  width: 25rem;
 }
 .racing-f1 section .premios .card-text {
   font-size: 1rem;
 }
-.racing-f1 section .racing-texto2 {
-  display: none;
+.racing-f1 .racing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.racing-f1 .racing iframe {
+  width: 80vw;
+  height: 30vh;
 }
 
 .sportcars section {
@@ -138,37 +170,39 @@ h2 {
   display: grid;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 20px;
+  gap: 2rem;
   background-color: #242526;
   width: 100%;
   color: rgba(255, 255, 255, 0.9058823529);
   margin: 2% 0;
-  width: 500px;
-  height: 300px;
+  width: 50rem;
+  height: 30rem;
 }
 .sportcars section .ferrari-sportcards .card-title {
   text-align: center;
 }
 
-.classics section {
+.classics {
   display: grid;
-  justify-content: center;
+  justify-items: center;
 }
 .classics section .ferrari-classics {
   display: grid;
   color: #000000;
   margin: 5% 0;
-  gap: 20px;
-  height: 200px;
+  gap: 2rem;
+  height: 16rem;
   background-color: #cc0000;
 }
 .classics section img {
   width: 100%;
-  height: 10rem;
+  height: 12rem;
 }
 .classics section .card-title {
   text-align: center;
-  margin-top: -25px;
+  height: 1rem;
+  font-size: 1.6rem;
+  margin-top: -1.5rem;
 }
 
 .timeline section {
@@ -178,54 +212,45 @@ h2 {
   flex-wrap: wrap;
 }
 .timeline section .ferrari-timeline {
-  display: flex;
   background-color: #cc0000;
+  width: 50rem;
 }
 .timeline section .linea-de-tiempo {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 15px 0;
-  gap: 20px;
+  margin: 1.5rem 0;
+  gap: 2rem;
 }
 .timeline section h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
+  font-size: 4rem;
 }
 .timeline section h2 .fecha {
   color: rgba(255, 255, 255, 0.9058823529);
 }
 .timeline section img {
   width: 100%;
-  height: 10rem;
-  object-fit: cover;
+  height: 16rem;
 }
 .timeline section .card-title {
-  height: 15px;
+  display: flex;
+  height: 2.5rem;
   width: 100%;
-  margin-top: -10px;
   text-align: center;
   color: #000000;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 footer {
   flex-wrap: wrap;
   color: rgba(255, 255, 255, 0.9058823529);
   margin-top: 2rem;
-  margin: 10% 3rem;
-  font-size: 12px;
+  font-size: 1.6rem;
   padding: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: opacity 0.3s ease-in-out;
-}
-footer:hover {
-  opacity: 0;
 }
 
 @media screen and (min-width: 600px) {
@@ -297,41 +322,40 @@ footer:hover {
     gap: 10px;
   }
   footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: opacity 0.3s ease-in-out;
-    flex-wrap: wrap;
+    display: grid;
     color: rgba(255, 255, 255, 0.9058823529);
     margin-top: 2rem;
     margin: 0 6.5rem;
     font-size: 12px;
     padding: 5%;
   }
-  footer:hover {
-    opacity: 0;
+  .classics {
+    display: grid;
+    justify-items: center;
   }
   .classics section {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 80vw;
-    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
   }
   .classics section .ferrari-classics {
     display: grid;
     color: #000000;
     margin: 5% 0;
-    gap: 20px;
-    height: 200px;
+    gap: 2rem;
+    height: 17rem;
     background-color: #cc0000;
   }
   .classics section img {
     width: 100%;
-    height: 10rem;
+    height: 12rem;
   }
   .classics section .card-title {
     text-align: center;
-    margin-top: -25px;
+    margin-top: -2.6rem;
+  }
+  .timeline {
+    width: 100vw;
+    height: 100vh;
   }
   .timeline section {
     display: flex;
@@ -340,39 +364,43 @@ footer:hover {
     flex-wrap: wrap;
   }
   .timeline section .ferrari-timeline {
+    display: flex;
     color: #000000;
     text-align: center;
     background-color: #cc0000;
+    gap: 2rem;
+    margin: 0 -0.5rem;
   }
   .timeline section .linea-de-tiempo {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 15px 0;
-    gap: 20px;
+    margin: 1.5rem 0;
   }
   .timeline section h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+    font-size: 4rem;
   }
   .timeline section h2 .fecha {
     color: rgba(255, 255, 255, 0.9058823529);
   }
   .timeline section img {
     width: 100%;
-    height: 10rem;
-    object-fit: cover;
+    height: 15rem;
   }
   .timeline section div {
     width: 80vw;
   }
   .timeline section .card-title {
     display: flex;
+    flex-wrap: wrap;
+    font-size: 1.6rem;
     width: 100%;
-    font-size: 18px;
+    margin-top: -2%;
+    height: 0.2rem;
     text-align: center;
   }
 }
@@ -394,33 +422,37 @@ footer:hover {
   .index .h1-index {
     margin-top: -15%;
     margin-bottom: 10%;
+    font-size: 3rem;
+  }
+  .index .h2-index {
+    font-size: 3rem;
+    margin-top: 15%;
   }
   .index .frases {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    margin: 30px 10px 0 0;
+    align-items: center;
+    gap: 2rem;
+    margin: 3rem 1rem 0 0;
     text-align: center;
   }
   .index .frases .card {
     flex-basis: calc(50% - 10px);
-    width: 500px;
-    height: 280px;
+    width: 50rem;
+    height: 28rem;
   }
   .index section {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 3rem;
   }
   .index section .ferrari-cards {
     display: flex;
     justify-items: center;
-    margin-top: 30px;
+    margin-top: 3rem;
     background-color: #cc0000;
-    height: 280px;
-    width: 500px;
+    height: 16rem;
   }
   .index section .ferrari-cards .card {
     align-items: center;
@@ -428,6 +460,10 @@ footer:hover {
   .index section .ferrari-cards .card-title {
     text-align: center;
   }
+  .index img {
+    width: 100%;
+    height: 12rem;
+  }
   .index section {
     display: flex;
     justify-content: center;
@@ -438,7 +474,7 @@ footer:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 3rem;
     background-color: #cc0000;
   }
   .index section .ferrari-cards .card-title {
@@ -483,19 +519,11 @@ footer:hover {
     margin: 5rem 1rem;
   }
   footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: opacity 0.3s ease-in-out;
-    flex-wrap: wrap;
     color: rgba(255, 255, 255, 0.9058823529);
     margin-top: 2rem;
     margin: 0 15rem;
-    font-size: 12px;
+    font-size: 1.6rem;
     padding: 5%;
-  }
-  footer:hover {
-    opacity: 0;
   }
   .ferrari-sportcards {
     display: flex;
@@ -508,27 +536,33 @@ footer:hover {
     flex: 0 0 calc(50% - 10px);
     max-width: calc(50% - 10px);
   }
+  .classics {
+    display: grid;
+    justify-items: center;
+  }
   .classics section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 80vw;
   }
   .classics section .ferrari-classics {
     display: grid;
     color: #000000;
     margin: 5% 0;
-    gap: 20px;
-    height: 200px;
+    gap: 2rem;
+    height: 16rem;
     background-color: #cc0000;
   }
   .classics section img {
     width: 100%;
-    height: 10rem;
-    object-fit: cover;
+    height: 12rem;
   }
   .classics section .card-title {
     text-align: center;
-    margin-top: -25px;
+    margin-top: -2.6rem;
+  }
+  .timeline {
+    width: 100vw;
+    height: 100vh;
   }
   .timeline section {
     display: flex;
@@ -541,37 +575,39 @@ footer:hover {
     color: #000000;
     text-align: center;
     background-color: #cc0000;
+    gap: 2rem;
+    margin: 0 -0.5rem;
   }
   .timeline section .linea-de-tiempo {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 15px 0;
-    gap: 20px;
+    margin: 1.5rem 0;
   }
   .timeline section h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+    font-size: 4rem;
   }
   .timeline section h2 .fecha {
     color: rgba(255, 255, 255, 0.9058823529);
   }
   .timeline section img {
     width: 100%;
-    height: 10rem;
-    object-fit: cover;
+    height: 15rem;
   }
   .timeline section div {
     width: 80vw;
   }
   .timeline section .card-title {
     display: flex;
-    font-size: 16px;
+    flex-wrap: wrap;
+    font-size: 1.6rem;
     width: 100%;
-    height: 15px;
+    margin-top: -2%;
+    height: 0.2rem;
     text-align: center;
   }
 }

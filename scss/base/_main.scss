@@ -1,6 +1,6 @@
 h4 {
   color: $light;
-  margin-left: 130px;
+  margin-left: 13rem;
   position: relative;
 }
 
@@ -8,8 +8,8 @@ h1,
 h2 {
   @include flex-center;
   color: $light;
-  margin-top: 25px;
-  font-size: 18px;
+  margin-top: 2.5rem;
+  font-size: 1.6rem;
 }
 
 // Index
@@ -25,52 +25,87 @@ h2 {
       display: grid;
       width: 100vw;
       height: 100vh;
-      max-width: 100%;
-      margin-top: -175%;
+      margin-top: -80%;
     }
   }
 
   .h1-index {
-    margin-top: -120%;
+    margin-top: -50%;
     margin-bottom: 10%;
   }
 
-  .frases {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin: 30px 10px 0 0;
-    text-align: center;
-
-    .card {
-      flex-basis: calc(50% - 10px);
-      width: 500px;
-      height: 320px;
-    }
+  .h2-index {
+    margin-top: 120%;
   }
+
+  .frases {
+    display: grid;
+    grid-template-columns: repeat(1 1fr);
+    justify-content: center;
+    gap: $gap;
+    margin: 3rem 0;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 50rem;
+    height: 40rem;
+  }
+
+  .frase-corta {
+    font-size: 1.8rem;
+  }
+
+  .frase-media {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    flex-basis: calc(50% - 10px);
+    width: 50rem;
+    height: 20rem;
+  }
+
 
   section {
     @include flex-center;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
 
-    .ferrari-cards {
+  .ferrari-cards {
+    display: grid;
+    grid-template-columns: repeat(1 1fr);
+    justify-content: center;
+    align-items: center;
+    background-color: $rojo-ferrari;
+    margin-top: 10%;
+    height: 20rem;
+
+
+    .card {
+      width: 10rem;
+      height: 15rem;
       display: flex;
-      justify-items: center;
-      margin-top: 30px;
+      align-items: center;
+      justify-content: center;
       background-color: $rojo-ferrari;
-      height: 280px;
-      width: 500px;
-
-      .card {
-        align-items: center;
-      }
-
-      .card-title {
-        text-align: center;
-      }
+      margin-top: 5%;
     }
   }
+
+  img {
+    width: 100%;
+    height: 16rem;
+    object-fit: cover;
+
+  }
+
+  .card-title {
+    text-align: center;
+    color: $light;
+    font-size: 1.2rem;
+  }
+
+
 
 }
 
@@ -84,6 +119,7 @@ h2 {
     font-size: 1rem;
     flex-wrap: wrap;
 
+
     .racing-texto,
     article {
       display: flex;
@@ -92,22 +128,16 @@ h2 {
       margin: 5% 0;
     }
 
-
-    .racing {
-      @include flex-center;
-
-
-      iframe {
-        width: 75vw;
-        height: 80vh;
-      }
+    .racing-texto2 {
+      display: none;
     }
 
     .premios {
       .card-body {
+        display: flex;
         text-align: center;
-        height: 200px;
-        width: 250px;
+        height: 20rem;
+        width: 25rem;
       }
 
       .card-text {
@@ -115,11 +145,19 @@ h2 {
       }
     }
 
-    .racing-texto2 {
-      display: none;
+
+  }
+
+  .racing {
+    @include flex-center;
+
+    iframe {
+      width: 80vw;
+      height: 30vh;
     }
 
   }
+
 
 }
 
@@ -135,8 +173,8 @@ h2 {
       @include cars;
       color: $light;
       margin: 2% 0;
-      width: 500px;
-      height: 300px;
+      width: 50rem;
+      height: 30rem;
     }
   }
 
@@ -145,29 +183,31 @@ h2 {
 
 // Classics
 .classics {
+  display: grid;
+  justify-items: center;
 
   section {
-    display: grid;
-    justify-content: center;
 
     .ferrari-classics {
       display: grid;
       color: $dark;
       margin: 5% 0;
       gap: $gap;
-      height: 200px;
+      height: 16rem;
       background-color: $rojo-ferrari;
 
     }
 
     img {
       width: 100%;
-      height: 10rem;
+      height: 12rem;
     }
 
     .card-title {
       text-align: center;
-      margin-top: -25px;
+      height: 1rem;
+      font-size: 1.6rem;
+      margin-top: -1.5rem;
 
     }
 
@@ -176,32 +216,32 @@ h2 {
 }
 
 
-
-
-
 // Timeline
 
 .timeline {
 
+
   section {
+
     @include flex-center;
     flex-wrap: wrap;
 
     .ferrari-timeline {
-      display: flex;
       background-color: $rojo-ferrari;
+      width: 50rem;
     }
+
 
     .linea-de-tiempo {
       @include flex-center;
       flex-wrap: wrap;
-      margin: 15px 0;
+      margin: 1.5rem 0;
       gap: $gap;
     }
 
     h2 {
       @include flex-center;
-      font-size: 40px;
+      font-size: 4rem;
 
       .fecha {
         color: $light;
@@ -210,17 +250,16 @@ h2 {
 
     img {
       width: 100%;
-      height: 10rem;
-      object-fit: cover;
+      height: 16rem;
     }
 
     .card-title {
-      height: 15px;
+      display: flex;
+      height: 2.5rem;
       width: 100%;
-      margin-top: -10px;
       text-align: center;
       color: $dark;
-      font-size: 18px;
+      font-size: 1.8rem;
     }
 
 
