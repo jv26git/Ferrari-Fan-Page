@@ -353,10 +353,6 @@ footer {
     text-align: center;
     margin-top: -2.6rem;
   }
-  .timeline {
-    width: 100vw;
-    height: 100vh;
-  }
   .timeline section {
     display: flex;
     justify-content: center;
@@ -435,6 +431,7 @@ footer {
     gap: 2rem;
     margin: 3rem 1rem 0 0;
     text-align: center;
+    width: 100%;
   }
   .index .frases .card {
     flex-basis: calc(50% - 10px);
@@ -559,10 +556,6 @@ footer {
   .classics section .card-title {
     text-align: center;
     margin-top: -2.6rem;
-  }
-  .timeline {
-    width: 100vw;
-    height: 100vh;
   }
   .timeline section {
     display: flex;

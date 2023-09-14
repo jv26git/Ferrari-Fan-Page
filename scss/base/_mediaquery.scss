@@ -123,8 +123,8 @@ $desktop-min-width: 1024px;
   }
 
   .timeline {
-    width: 100vw;
-    height: 100vh;
+   
+    
 
 
     section {
@@ -227,6 +227,7 @@ $desktop-min-width: 1024px;
       gap: $gap;
       margin: 3rem 1rem 0 0;
       text-align: center;
+      width: 100%;
 
       .card {
         flex-basis: calc(50% - 10px);
@@ -397,8 +398,8 @@ $desktop-min-width: 1024px;
   // Timeline
 
   .timeline {
-    width: 100vw;
-    height: 100vh;
+   
+   
 
 
     section {
@@ -419,6 +420,7 @@ $desktop-min-width: 1024px;
         @include flex-center;
         flex-wrap: wrap;
         margin: 1.5rem 0;
+        
 
       }
 
