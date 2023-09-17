@@ -1,0 +1,267 @@
+
+//  Media query para Desktop
+
+@media screen and (min-width: 1024px) {
+
+  // Index
+  .index {
+
+    display: grid;
+    justify-content: center;
+    gap: 3rem;
+
+    .video-enzo {
+      @include flex-center;
+      height: 150vh;
+      overflow: hidden;
+
+      video {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        margin-top: -30%;
+      }
+    }
+
+    .h1-index {
+      margin-top: -30%;
+      font-size: 4rem;
+      text-align: center;
+    }
+
+    .h2-index {
+      margin-top: 15%;
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    .frases {
+      @include flex-center;
+      gap: $gap;
+      margin: 1rem 0;
+      text-align: center;
+      font-size: 1.9rem;
+      height: 25rem;
+
+
+      .frase-corta {
+        font-size: 2.6rem;
+      }
+
+      .frase-media {
+        font-size: 2.1rem;
+      }
+    }
+
+
+    .ferrari-cards {
+      display: grid;
+      grid-template-columns: repeat(3 1fr);
+      justify-content: center;
+      align-content: center;
+      background-color: $rojo-ferrari;
+      margin-top: 10%;
+      height: 20rem;
+      border-radius: 50%;
+
+      .card {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        background-color: $rojo-ferrari;
+        margin-top: 5%;
+      }
+
+
+      img {
+        width: 100%;
+        height: 16.5rem;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+
+      .card-title {
+        text-align: center;
+        color: $light;
+        font-size: 1.3rem;
+        margin-top: -0.7rem;
+
+      }
+
+    }
+
+  }
+
+  // Racing
+
+  .racing-f1 {
+
+
+    section {
+      @include flex-center;
+      color: $light;
+      font-size: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 5%;
+
+      .racing-texto,
+      article {
+        display: flex;
+        text-align: center;
+        font-size: 1.8rem;
+      }
+    }
+
+    .racing {
+      @include flex-center;
+
+
+
+      iframe {
+        width: 75vw;
+        height: 80vh;
+      }
+    }
+
+
+    .premios {
+      @include flex-center;
+      flex-wrap: wrap;
+      gap: $gap;
+      width: 100vw;
+      height: 80vh;
+    }
+
+    .racing-texto2 {
+      display: flex;
+      text-align: center;
+      color: $light;
+      margin: 5rem 1rem;
+    }
+
+  }
+
+
+
+
+  // SportCards
+
+  .ferrari-sportcards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+
+
+    .card {
+      flex: 0 0 calc(50% - 10px);
+      max-width: calc(50% - 10px);
+    }
+  }
+
+
+  // Classics
+  .classics {
+    display: grid;
+    justify-items: center;
+
+
+    section {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+
+      .ferrari-classics {
+        display: grid;
+        color: $dark;
+        margin: 5% 0;
+        gap: $gap;
+        height: 16rem;
+        background-color: $rojo-ferrari;
+
+
+      }
+
+      img {
+        width: 100%;
+        height: 12rem;
+      }
+
+      .card-title {
+        text-align: center;
+        margin-top: -2.6rem;
+
+      }
+
+    }
+
+  }
+
+
+  // Timeline
+
+  .timeline {
+
+
+
+
+    section {
+      @include flex-center;
+      flex-wrap: wrap;
+
+      .ferrari-timeline {
+        display: flex;
+        color: $dark;
+        text-align: center;
+        background-color: $rojo-ferrari;
+        gap: $gap;
+        margin: 0 -0.5rem;
+
+      }
+
+      .linea-de-tiempo {
+        @include flex-center;
+        flex-wrap: wrap;
+        margin: 1.5rem 0;
+
+
+      }
+
+      h2 {
+        @include flex-center;
+        font-size: 4rem;
+
+        .fecha {
+          color: $light;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 15rem;
+      }
+
+      div {
+        width: 100%;
+      }
+
+      .card-title {
+        font-size: 1.5rem;
+        width: 100%;
+        margin-top: -2.4rem;
+        height: 0.2rem;
+        text-align: center;
+      }
+
+    }
+
+
+
+  }
+
+
+  // Fin del MQ Desktop
+}

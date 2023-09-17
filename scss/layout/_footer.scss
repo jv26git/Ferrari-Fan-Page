@@ -1,0 +1,24 @@
+footer {
+  display: grid;
+  justify-content: center;
+
+  a {
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+    margin: 50% 0 15% 0;
+    width: 5rem;
+    height: 3rem;
+
+  }
+
+  .cavallino-footer {
+    display: grid;
+    justify-content: center;
+    margin: -15% 0 50% 0;
+
+    a {
+      display: grid;
+      justify-content: center;
+    }
+  }
+}

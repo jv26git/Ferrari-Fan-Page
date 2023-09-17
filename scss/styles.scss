@@ -1,9 +1,11 @@
-
-@import 'base/mixins';
+@import 'layout/mixins';
 @import 'base/body';
 
-@import 'base/header';
-@import 'base/main';
-@import 'base/footer';
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/footer';
 
-@import 'base/mediaquery';
+
+
+@import 'utilities/mqtablet';
+@import 'utilities/mqdesktop';

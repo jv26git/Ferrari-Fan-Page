@@ -1,0 +1,225 @@
+
+// Media query para Tablet
+
+@media screen and (max-width: 600px) {
+
+  // Index
+  .video-enzo {
+    @include flex-center;
+    height: 150vh;
+    overflow: hidden;
+
+    video {
+      display: grid;
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      margin-top: -200%;
+    }
+
+    
+      .h1-index {
+        margin-top: -30%;
+        font-size: 4rem;
+        text-align: center;
+      }
+
+      .h2-index {
+        margin-top: 15%;
+        font-size: 3rem;
+        text-align: center;
+      }
+
+      .frases {
+        @include flex-center;
+        gap: $gap;
+        margin: 1rem 0;
+        text-align: center;
+        font-size: 1.9rem;
+        height: 20rem;
+
+
+        .frase-corta {
+          font-size: 2.6rem;
+        }
+
+        .frase-media {
+          font-size: 2.1rem;
+        }
+      }
+
+
+      .ferrari-cards {
+        display: grid;
+        grid-template-columns: repeat(3 1fr);
+        justify-content: center;
+        align-items: center;
+        background-color: $rojo-ferrari;
+        margin-top: 10%;
+        height: 20rem;
+        border-radius: 50%;
+
+        .card {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: $rojo-ferrari;
+          margin-top: 5%;
+        }
+
+
+        img {
+          width: 100%;
+          height: 16.5rem;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+
+
+        .card-title {
+          text-align: center;
+          color: $light;
+          font-size: 1.3rem;
+          margin-top: -0.7rem;
+
+        }
+
+      }
+
+
+  }
+
+
+
+  // Racing
+
+  .racing {
+    @include flex-center;
+    width: 100%;
+    height: 100%;
+
+    iframe {
+      width: 75vw;
+      height: 30vh;
+    }
+  }
+
+  .premios {
+    @include flex-center;
+    gap: 10px;
+  }
+
+
+
+
+  // Classics
+  .classics {
+    display: grid;
+    justify-items: center;
+
+
+    section {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      .ferrari-classics {
+        display: grid;
+        color: $dark;
+        margin: 5% 0;
+        gap: $gap;
+        height: 17rem;
+        background-color: $rojo-ferrari;
+      }
+
+      img {
+        width: 100%;
+        height: 12rem;
+      }
+
+      .card-title {
+        text-align: center;
+
+
+      }
+
+    }
+
+  }
+
+  // Timeline
+
+  .timeline {
+
+
+
+
+    section {
+      @include flex-center;
+      flex-wrap: wrap;
+
+      .ferrari-timeline {
+        display: flex;
+        color: $dark;
+        text-align: center;
+        background-color: $rojo-ferrari;
+        gap: $gap;
+        margin: 0 -0.5rem;
+
+      }
+
+      .linea-de-tiempo {
+        @include flex-center;
+        flex-wrap: wrap;
+        margin: 1.5rem 0;
+
+      }
+
+      h2 {
+        @include flex-center;
+        font-size: 4rem;
+
+        .fecha {
+          color: $light;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 15rem;
+      }
+
+      div {
+        width: 100%;
+      }
+
+      .card-title {
+        font-size: 1.6rem;
+        width: 100%;
+        margin-top: -2%;
+        height: 0.2rem;
+        text-align: center;
+      }
+
+    }
+
+    h1,
+    h2 {
+      font-size: 4rem;
+      text-align: center;
+      color: $light;
+    }
+
+    h5 {
+      text-align: center;
+      color: $dark;
+      margin-top: -1rem;
+    }
+
+  }
+
+
+
+
+  // Cierre de la MQ
+
+}

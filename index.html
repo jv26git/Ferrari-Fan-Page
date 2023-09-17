@@ -12,6 +12,8 @@
   <!-- Link CSS Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <!--Link Bootstrap Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <!-- Link CSS -->
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
@@ -19,7 +21,6 @@
 <body class="ferrari">
   <header>
     <!-- Nav Bootstrap -->
-
     <nav class="navbar navbar-expand-lg nav-ferrari">
       <div class="container-fluid">
         <a class="navbar-brand" href="./index.html">
@@ -47,7 +48,6 @@
       </div>
     </nav>
   </header>
-
   <main class="index">
     <!-- Video inicial de la web -->
     <div class="video-enzo">
@@ -56,20 +56,19 @@
         Tu navegador no soporta el elemento de video.
       </video>
     </div>
-
     <h1 class="h1-index">Enzo Ferrari y su mítico legado</h1>
-
     <section class="frases">
       <!-- Cards Bootstrap con frases -->
-      <div class="card text-bg-dark mb-3" style="max-width: 15rem">
+      <div class="card text-bg-dark mb-3" style="max-width: 22rem">
         <div class="card-body">
           <p class="card-text frase-corta">
             "Nunca agaches la cabeza, mira siempre bien alto ganes o pierdas."
           </p>
           <h5 cite title="Source Title">Enzo Ferrari</h5>
         </div>
+
       </div>
-      <div class="card text-bg-dark mb-3" style="max-width: 15rem">
+      <div class="card text-bg-dark mb-3" style="max-width: 22rem">
         <div class="card-body">
           <p class="card-text frase-corta">
             "La mejor Ferrari, es la que aún no se ha contruido."
@@ -78,7 +77,7 @@
         </div>
       </div>
 
-      <div class="card text-bg-dark mb-3" style="max-width: 15rem">
+      <div class="card text-bg-dark mb-3" style="max-width: 22rem">
         <div class="card-body">
           <p class="card-text">
             "Los Ferrari son un sueño, la gente sueña con tener un coche tan
@@ -88,7 +87,7 @@
           <h5 cite title="Source Title">Enzo Ferrari</h5>
         </div>
       </div>
-      <div class="card text-bg-dark mb-3" style="max-width: 15rem">
+      <div class="card text-bg-dark mb-3" style="max-width: 22rem">
         <div class="card-body">
           <p class="card-text frase-media">
             "No vendo coches, vendo motores. El coche lo regalo, el motor
@@ -103,19 +102,19 @@
     </div>
     <section>
       <!--Cards Bootstrap con imágenes-->
-      <div class="card ferrari-cards" style="width: 18rem">
-        <img src="./img/ferrarienzo.avif" class="card-img-top" alt="Ferrari Enzo" />
+      <div class="card ferrari-cards" style="width: 25rem">
+        <img src="./img/ferrarienzo.jpg" class="card-img-top" alt="Ferrari Enzo" />
         <div class="card-body">
           <h5 class="card-title">Ferrari Enzo</h5>
         </div>
       </div>
-      <div class="card ferrari-cards" style="width: 18rem">
+      <div class="card ferrari-cards" style="width: 25rem">
         <img src="./img/ferraridaytonasp3.jpg" class="card-img-top" alt="Ferrari Daytona SP3" />
         <div class="card-body">
           <h5 class="card-title">Ferrari Daytona SP3</h5>
         </div>
       </div>
-      <div class="card ferrari-cards" style="width: 18rem">
+      <div class="card ferrari-cards" style="width: 25rem">
         <img src="./img/ferrarilaferrari.jpg" class="card-img-top" alt="Ferrari LaFerrari" />
         <div class="card-body">
           <h5 class="card-title">Ferrari LaFerrari</h5>
@@ -123,17 +122,29 @@
       </div>
     </section>
   </main>
-
   <footer>
-    <p>
-      Ferrari S.p.A. - A company under Italian law, having its registered
-      office at Via Emilia Est No. 1163, Modena, Italy, Companies’ Register
-      of Modena, VAT and Tax number 00159560366 and share capital of Euro
-      20,260,000 Copyright 2023
-    </p>
-    <p>- All rights reserved -</p>
+    <div>
+      <!-- Facebook -->
+      <a class="btn btn-primary" style="background-color: #3b5998;"
+        href="https://www.facebook.com/Ferrari/?locale=es_LA" target="_blank" role="button"><i
+          class="bi bi-facebook"></i></a>
+      <!-- Twitter -->
+      <a class="btn btn-primary" style="background-color: #55acee;"
+        href="https://twitter.com/ScuderiaFerrari?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+        target="_blank" role="button"><i class="bi bi-twitter"></i></a>
+      <!-- Instagram -->
+      <a class="btn btn-primary" style="background-color: #ac2bac;" href="https://www.instagram.com/ferrari/"
+        target="_blank" role="button"><i class="bi bi-instagram"></i></a>
+      <!-- Youtube -->
+      <a class="btn btn-primary" style="background-color: #ed302f;" href="https://www.youtube.com/@Ferrari"
+        target="_blank" role="button"><i class="bi bi-youtube"></i></a>
+    </div>
+    <div class="cavallino-footer">
+      <!--Logo Ferrari Footer-->
+      <a href="https://www.ferrari.com/es-AR"  target="_blank">
+        <img src="./img/cavallino-footer.jpg" class="cavallino-nav" alt="Logo Cavallino Rampante" /></a>
+    </div>
   </footer>
-
   <!-- Link JS Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
