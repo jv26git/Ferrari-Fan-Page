@@ -2,7 +2,7 @@ $rojo-ferrari: #cc0000;
 $dark: #000000;
 $light: #ffffffe7;
 $cards: #242526;
-$gap :2rem;
+$gap :3rem;
 
 html {
   font-size: 62.5%;
@@ -17,12 +17,22 @@ html {
 
 }
 
-// Animación para el footer
-%hover-fade {
-  @include flex-center;
-  transition: opacity 0.3s ease-in-out;
 
-  &:hover {
-    opacity: 0;
-  }
+
+h1,h2 {
+  font-size: 3rem;
+  color: $light;
+  text-align: center;
+  margin: 3% 0;
 }
+
+
+h4 {
+ text-align: center;
+ color: $dark;
+}
+
+
+
+
+

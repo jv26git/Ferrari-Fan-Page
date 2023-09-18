@@ -1,4 +1,3 @@
-
 //  Media query para Desktop
 
 @media screen and (min-width: 1024px) {
@@ -8,7 +7,13 @@
 
     display: grid;
     justify-content: center;
-    gap: 3rem;
+
+
+    section {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+    }
 
     .video-enzo {
       @include flex-center;
@@ -42,7 +47,12 @@
       margin: 1rem 0;
       text-align: center;
       font-size: 1.9rem;
-      height: 25rem;
+
+
+
+      .card {
+        height: 28rem;
+      }
 
 
       .frase-corta {
@@ -144,59 +154,42 @@
   }
 
 
-
-
-  // SportCards
-
-  .ferrari-sportcards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-
-
-    .card {
-      flex: 0 0 calc(50% - 10px);
-      max-width: calc(50% - 10px);
-    }
-  }
-
-
   // Classics
   .classics {
     display: grid;
-    justify-items: center;
 
 
     section {
       display: grid;
+      justify-content: center;
       grid-template-columns: repeat(3, 1fr);
+      gap: 3rem;
+    }
 
 
-      .ferrari-classics {
-        display: grid;
-        color: $dark;
-        margin: 5% 0;
-        gap: $gap;
-        height: 16rem;
-        background-color: $rojo-ferrari;
+    .ferrari-classics {
+      display: grid;
+      color: $dark;
+      margin: 5% 0;
+      gap: $gap;
+      height: 16rem;
+      background-color: $rojo-ferrari;
 
-
-      }
-
-      img {
-        width: 100%;
-        height: 12rem;
-      }
-
-      .card-title {
-        text-align: center;
-        margin-top: -2.6rem;
-
-      }
 
     }
+
+    img {
+      width: 100%;
+      height: 12rem;
+    }
+
+    .card-title {
+      text-align: center;
+      margin-top: -2.6rem;
+
+    }
+
+
 
   }
 
@@ -249,7 +242,7 @@
       }
 
       .card-title {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         width: 100%;
         margin-top: -2.4rem;
         height: 0.2rem;

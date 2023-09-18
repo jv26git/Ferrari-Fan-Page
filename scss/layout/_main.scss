@@ -110,18 +110,22 @@
 
 
   .premios {
-    .card-body {
-      display: grid;
-      grid-template-columns: repeat(1 1fr);
-      justify-content: center;
-      text-align: center;
-      height: 15rem;
 
+    display: grid;
+    grid-template-columns: repeat(1 1fr);
+    justify-content: center;
+    text-align: center;
+
+
+    .card-body {
+      height: 18rem;
     }
 
 
-    .card-text {
-      font-size: 1rem;
+
+    .card-text,
+    .card-title {
+      font-size: 1.5rem;
     }
   }
 
@@ -135,12 +139,14 @@
     iframe {
       width: 80vw;
       height: 30vh;
+      margin-bottom: 5%;
     }
 
   }
 
 
 }
+
 
 // Sport Cards
 
@@ -148,30 +154,33 @@
   section {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: $gap;
+  }
 
-    .ferrari-sportcards {
-      display: grid;
-      @include cars;
-      color: $light;
-      margin: 2% 0;
-      height: 25rem;
-      border-radius: 50%;
-
-    }
-
-    img {
-      width: 100%;
-      height: 20rem;
-      border-radius: 50%;
-    }
-
-    .card-title {
-      text-align: center;
-      font-size: 1.3rem;
-      margin-top: -4rem;
-    }
+  .ferrari-sportcards {
+    display: grid;
+    @include cars;
+    color: $light;
+    margin: 2% 0;
+    height: 25rem;
+    border-radius: 50%;
 
   }
+
+  img {
+    width: 100%;
+    height: 20rem;
+    border-radius: 50%;
+  }
+
+  .card-title {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: -4rem;
+  }
+
+
 
 
 }
@@ -179,35 +188,36 @@
 
 // Classics
 .classics {
+
   display: grid;
   justify-items: center;
 
   section {
 
     .ferrari-classics {
-      display: grid;
+      @include card-horizontal-row;
       color: $dark;
       margin: 5% 0;
-      gap: $gap;
       height: 16rem;
       background-color: $rojo-ferrari;
 
     }
+  }
 
-    img {
-      width: 100%;
-      height: 12rem;
-    }
+  img {
+    width: 100%;
+    height: 12rem;
+  }
 
-    .card-title {
-      text-align: center;
-      height: 1rem;
-      font-size: 1.6rem;
-      margin-top: -1.5rem;
-
-    }
+  .card-title {
+    text-align: center;
+    height: 1rem;
+    font-size: 1.6rem;
+    margin-top: -3.8rem;
 
   }
+
+
 
 }
 
@@ -235,10 +245,11 @@
       margin: 1.5rem 0;
       gap: $gap;
     }
-      .fecha {
-        color: $light;
-      }
-    
+
+    .fecha {
+      color: $light;
+    }
+
 
     img {
       width: 100%;
