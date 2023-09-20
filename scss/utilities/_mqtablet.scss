@@ -2,69 +2,59 @@
 
 @media screen and (min-width: 600px) {
 
+  h1,
+  h2 {
+    font-size: 2.5rem;
+    color: $light;
+    text-align: center;
+    margin: 3% 0;
+  }
+
+
   // Index
 
   .index {
 
+    display: grid;
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: $gap;
+    }
 
 
     .video-enzo {
       @include flex-center;
-      height: 150vh;
+      height: 120vh;
       overflow: hidden;
+
 
       video {
         display: grid;
         width: 100%;
         height: 100%;
-        max-width: 100%;
-        margin-top: -65%;
+        margin-top: -55%;
+
       }
     }
 
     .h1-index {
-      margin-top: -30%;
-      font-size: 4rem;
+      margin-top: -50%;
       text-align: center;
     }
 
     .h2-index {
-      margin-top: 15%;
+      margin-top: 60%;
       font-size: 3rem;
       text-align: center;
     }
 
-    .frases {
-      @include flex-center;
-      flex-wrap: wrap;
-      gap: $gap;
-      margin: 1rem 0;
-      text-align: center;
-      font-size: 1.9rem;
-      height: 20rem;
-
-
-      .frase-corta {
-        font-size: 2.6rem;
-      }
-
-      .frase-media {
-        font-size: 2.1rem;
-      }
-
-      .card-body {
-        height: 28rem;
-      }
-
-
-    }
 
 
     .ferrari-cards {
-      display: grid;
-      grid-template-columns: repeat(3 1fr);
-      justify-content: center;
-      align-items: center;
+      @include flex-center;
       background-color: $rojo-ferrari;
       margin-top: 10%;
       height: 20rem;
@@ -96,6 +86,32 @@
 
     }
 
+    .frases {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: $gap;
+      margin: 1rem 0;
+      text-align: center;
+      font-size: 1.9rem;
+      height: 20rem;
+
+
+      .frase-corta {
+        font-size: 2.6rem;
+      }
+
+      .frase-media {
+        font-size: 2.1rem;
+      }
+
+      .card-body {
+        height: 28rem;
+      }
+
+
+    }
+
 
   }
 
@@ -114,17 +130,14 @@
 
       iframe {
         width: 75vw;
-        height: 30vh;
+        height: 50vh;
       }
     }
 
-    .racing-texto {
-      font-size: 2rem;
-    }
 
     .premios {
       @include flex-center;
-      gap: 10px;
+      gap: 1rem;
     }
 
 
@@ -138,12 +151,11 @@
 
     section {
       display: grid;
-      gap: 3rem;
+      gap: $gap;
       grid-template-columns: repeat(2, 1fr);
 
       .ferrari-classics {
         display: grid;
-
         color: $dark;
         margin: 5% 0;
         gap: $gap;
@@ -158,6 +170,7 @@
 
       .card-title {
         text-align: center;
+        margin-top: -2.8rem;
       }
 
     }
@@ -214,31 +227,19 @@
       .card-title {
         font-size: 1.6rem;
         width: 100%;
-        margin-top: -2%;
+        margin-top: -2.4rem;
         height: 0.2rem;
         text-align: center;
       }
 
+
+
     }
 
-    h1,
-    h2 {
-      font-size: 4rem;
-      text-align: center;
-      color: $light;
-    }
 
-    h5 {
-      text-align: center;
-      color: $dark;
-      margin-top: -1rem;
-    }
 
   }
 
 
-
-
-  // Cierre de la MQ
 
 }

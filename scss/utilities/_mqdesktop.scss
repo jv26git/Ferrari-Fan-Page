@@ -2,6 +2,15 @@
 
 @media screen and (min-width: 1024px) {
 
+  h1,h2 {
+    font-size: 3rem;
+    color: $light;
+    text-align: center;
+    margin: 3% 0;
+  }
+
+
+
   // Index
   .index {
 
@@ -12,12 +21,12 @@
     section {
       display: flex;
       justify-content: center;
-      gap: 3rem;
+      gap: $gap;
     }
 
     .video-enzo {
       @include flex-center;
-      height: 150vh;
+      height: 120vh;
       overflow: hidden;
 
       video {
@@ -25,12 +34,12 @@
         width: 100%;
         height: 100%;
         max-width: 100%;
-        margin-top: -30%;
+        margin-top: -15%;
       }
     }
 
     .h1-index {
-      margin-top: -30%;
+      margin-top: -10%;
       font-size: 4rem;
       text-align: center;
     }
@@ -85,7 +94,7 @@
 
 
       img {
-        width: 100%;
+        width: 100%;;
         height: 16.5rem;
         object-fit: cover;
         border-radius: 50%;
@@ -140,7 +149,7 @@
       @include flex-center;
       flex-wrap: wrap;
       gap: $gap;
-      width: 100vw;
+      width: 100%;
       height: 80vh;
     }
 
@@ -149,6 +158,11 @@
       text-align: center;
       color: $light;
       margin: 5rem 1rem;
+    }
+
+    h2 {
+      display: grid;
+      text-align: center;
     }
 
   }
@@ -163,7 +177,7 @@
       display: grid;
       justify-content: center;
       grid-template-columns: repeat(3, 1fr);
-      gap: 3rem;
+      gap: $gap;
     }
 
 
@@ -185,7 +199,7 @@
 
     .card-title {
       text-align: center;
-      margin-top: -2.6rem;
+      margin-top: -2.8rem;
 
     }
 
@@ -256,5 +270,4 @@
   }
 
 
-  // Fin del MQ Desktop
 }

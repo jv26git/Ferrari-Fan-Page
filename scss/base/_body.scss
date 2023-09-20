@@ -18,18 +18,13 @@ html {
 }
 
 
-
-h1,h2 {
-  font-size: 3rem;
-  color: $light;
-  text-align: center;
-  margin: 3% 0;
-}
-
-
 h4 {
  text-align: center;
  color: $dark;
+}
+
+%full-width {
+  width: 100%;
 }
 
 

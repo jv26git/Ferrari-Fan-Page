@@ -1,3 +1,14 @@
+h1,
+h2 {
+  font-size: 2rem;
+  color: $light;
+  text-align: center;
+  margin: 3% 0;
+}
+
+
+
+
 // Index
 
 .index {
@@ -22,7 +33,7 @@
   }
 
   .h1-index {
-    margin-top: -50%;
+    margin-top: -80%;
     margin-bottom: 10%;
     font-size: 2rem;
     color: $light;
@@ -35,8 +46,8 @@
   }
 
   .frases {
-    display: grid;
-    grid-template-columns: repeat(1 1fr);
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: $gap;
     margin: 3rem 0;
@@ -67,7 +78,7 @@
 
 
     img {
-      width: 100%;
+      @extend %full-width;
       height: 16.5rem;
       object-fit: cover;
       border-radius: 50%;
@@ -104,7 +115,7 @@
       text-align: center;
       width: 80vw;
       margin: 5% 0;
-      font-size: 1.2rem;
+      font-size: 1.6rem;
     }
   }
 
@@ -130,6 +141,10 @@
   }
 
   .racing-texto2 {
+    display: none;
+  }
+
+  h2 {
     display: none;
   }
 
@@ -169,7 +184,7 @@
   }
 
   img {
-    width: 100%;
+    @extend %full-width;
     height: 20rem;
     border-radius: 50%;
   }
@@ -177,7 +192,7 @@
   .card-title {
     text-align: center;
     font-size: 1.3rem;
-    margin-top: -4rem;
+    margin-top: -4.6rem;
   }
 
 
@@ -205,7 +220,7 @@
   }
 
   img {
-    width: 100%;
+    @extend %full-width;
     height: 12rem;
   }
 
@@ -252,16 +267,18 @@
 
 
     img {
-      width: 100%;
+      @extend %full-width;
       height: 16rem;
     }
 
-
+     div {
+      @extend %full-width;
+     }
 
     .card-title {
       display: flex;
       height: 2.5rem;
-      width: 100%;
+      @extend %full-width;
       text-align: center;
       color: $dark;
       font-size: 1.8rem;

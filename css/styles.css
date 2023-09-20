@@ -9,16 +9,13 @@ html {
   font-style: italic;
 }
 
-h1, h2 {
-  font-size: 3rem;
-  color: rgba(255, 255, 255, 0.9058823529);
-  text-align: center;
-  margin: 3% 0;
-}
-
 h4 {
   text-align: center;
   color: #000000;
+}
+
+.timeline section .card-title, .timeline section div, .timeline section img, .classics img, .sportcars img, .index .ferrari-cards img {
+  width: 100%;
 }
 
 .nav-ferrari,
@@ -43,6 +40,14 @@ h4 {
   height: 7.5rem;
 }
 
+h1,
+h2 {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.9058823529);
+  text-align: center;
+  margin: 3% 0;
+}
+
 .index {
   display: flex;
   justify-content: center;
@@ -64,7 +69,7 @@ h4 {
   margin-top: -80%;
 }
 .index .h1-index {
-  margin-top: -50%;
+  margin-top: -80%;
   margin-bottom: 10%;
   font-size: 2rem;
   color: rgba(255, 255, 255, 0.9058823529);
@@ -75,8 +80,8 @@ h4 {
   color: rgba(255, 255, 255, 0.9058823529);
 }
 .index .frases {
-  display: grid;
-  grid-template-columns: repeat(1 1fr);
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 3rem;
   margin: 3rem 0;
@@ -102,7 +107,6 @@ h4 {
   margin-top: 5%;
 }
 .index .ferrari-cards img {
-  width: 100%;
   height: 16.5rem;
   object-fit: cover;
   border-radius: 50%;
@@ -128,7 +132,7 @@ h4 {
   text-align: center;
   width: 80vw;
   margin: 5% 0;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 .racing-f1 .premios {
   display: grid;
@@ -144,6 +148,9 @@ h4 {
   font-size: 1.5rem;
 }
 .racing-f1 .racing-texto2 {
+  display: none;
+}
+.racing-f1 h2 {
   display: none;
 }
 .racing-f1 .racing {
@@ -179,14 +186,13 @@ h4 {
   text-align: center;
 }
 .sportcars img {
-  width: 100%;
   height: 20rem;
   border-radius: 50%;
 }
 .sportcars .card-title {
   text-align: center;
   font-size: 1.3rem;
-  margin-top: -4rem;
+  margin-top: -4.6rem;
 }
 
 .classics {
@@ -203,7 +209,6 @@ h4 {
   background-color: #cc0000;
 }
 .classics img {
-  width: 100%;
   height: 12rem;
 }
 .classics .card-title {
@@ -235,13 +240,11 @@ h4 {
   color: rgba(255, 255, 255, 0.9058823529);
 }
 .timeline section img {
-  width: 100%;
   height: 16rem;
 }
 .timeline section .card-title {
   display: flex;
   height: 2.5rem;
-  width: 100%;
   text-align: center;
   color: #000000;
   font-size: 1.8rem;
@@ -269,53 +272,46 @@ footer .cavallino-footer a {
 }
 
 @media screen and (min-width: 600px) {
+  h1,
+  h2 {
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 0.9058823529);
+    text-align: center;
+    margin: 3% 0;
+  }
+  .index {
+    display: grid;
+  }
+  .index section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+  }
   .index .video-enzo {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150vh;
+    height: 120vh;
     overflow: hidden;
   }
   .index .video-enzo video {
     display: grid;
     width: 100%;
     height: 100%;
-    max-width: 100%;
-    margin-top: -65%;
+    margin-top: -55%;
   }
   .index .h1-index {
-    margin-top: -30%;
-    font-size: 4rem;
+    margin-top: -50%;
     text-align: center;
   }
   .index .h2-index {
-    margin-top: 15%;
+    margin-top: 60%;
     font-size: 3rem;
     text-align: center;
   }
-  .index .frases {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 3rem;
-    margin: 1rem 0;
-    text-align: center;
-    font-size: 1.9rem;
-    height: 20rem;
-  }
-  .index .frases .frase-corta {
-    font-size: 2.6rem;
-  }
-  .index .frases .frase-media {
-    font-size: 2.1rem;
-  }
-  .index .frases .card-body {
-    height: 28rem;
-  }
   .index .ferrari-cards {
-    display: grid;
-    grid-template-columns: repeat(3 1fr);
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: #cc0000;
@@ -342,6 +338,25 @@ footer .cavallino-footer a {
     font-size: 1.3rem;
     margin-top: -0.7rem;
   }
+  .index .frases {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 1.9rem;
+    height: 20rem;
+  }
+  .index .frases .frase-corta {
+    font-size: 2.6rem;
+  }
+  .index .frases .frase-media {
+    font-size: 2.1rem;
+  }
+  .index .frases .card-body {
+    height: 28rem;
+  }
   .racing-f1 .racing {
     display: flex;
     justify-content: center;
@@ -351,16 +366,13 @@ footer .cavallino-footer a {
   }
   .racing-f1 .racing iframe {
     width: 75vw;
-    height: 30vh;
-  }
-  .racing-f1 .racing-texto {
-    font-size: 2rem;
+    height: 50vh;
   }
   .racing-f1 .premios {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
   }
   .classics {
     display: grid;
@@ -385,6 +397,7 @@ footer .cavallino-footer a {
   }
   .classics section .card-title {
     text-align: center;
+    margin-top: -2.8rem;
   }
   .timeline section {
     display: flex;
@@ -426,23 +439,18 @@ footer .cavallino-footer a {
   .timeline section .card-title {
     font-size: 1.6rem;
     width: 100%;
-    margin-top: -2%;
+    margin-top: -2.4rem;
     height: 0.2rem;
     text-align: center;
   }
-  .timeline h1,
-  .timeline h2 {
-    font-size: 4rem;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.9058823529);
-  }
-  .timeline h5 {
-    text-align: center;
-    color: #000000;
-    margin-top: -1rem;
-  }
 }
 @media screen and (min-width: 1024px) {
+  h1, h2 {
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.9058823529);
+    text-align: center;
+    margin: 3% 0;
+  }
   .index {
     display: grid;
     justify-content: center;
@@ -456,7 +464,7 @@ footer .cavallino-footer a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150vh;
+    height: 120vh;
     overflow: hidden;
   }
   .index .video-enzo video {
@@ -464,10 +472,10 @@ footer .cavallino-footer a {
     width: 100%;
     height: 100%;
     max-width: 100%;
-    margin-top: -30%;
+    margin-top: -15%;
   }
   .index .h1-index {
-    margin-top: -30%;
+    margin-top: -10%;
     font-size: 4rem;
     text-align: center;
   }
@@ -553,7 +561,7 @@ footer .cavallino-footer a {
     align-items: center;
     flex-wrap: wrap;
     gap: 3rem;
-    width: 100vw;
+    width: 100%;
     height: 80vh;
   }
   .racing-f1 .racing-texto2 {
@@ -561,6 +569,10 @@ footer .cavallino-footer a {
     text-align: center;
     color: rgba(255, 255, 255, 0.9058823529);
     margin: 5rem 1rem;
+  }
+  .racing-f1 h2 {
+    display: grid;
+    text-align: center;
   }
   .classics {
     display: grid;
@@ -585,7 +597,7 @@ footer .cavallino-footer a {
   }
   .classics .card-title {
     text-align: center;
-    margin-top: -2.6rem;
+    margin-top: -2.8rem;
   }
   .timeline section {
     display: flex;
